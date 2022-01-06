@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="rickRoll.css">
+    <link rel="shortcut icon" href="/favicon.png">
+    <title>April Fools!</title>
+  </head>
+  <body>
+
+    <h1><em>APRIL FOOOOOOOOOOOLS!!!!<em></h1>
+    
+    <hr>
+    <script>
+      var rickRoll = new Audio("rickRoll.mp3");
+      rickRoll.loop = true;
+      rickRoll.play();
+      setInterval(function() {
+        let rickRollText = document.createElement("h1");
+        rickRollText.innerText = "GET RICK ROLLED!!!!";
+        document.body.appendChild(rickRollText);
+      }, 500)
+    </script>
+  </body>
+</html>
